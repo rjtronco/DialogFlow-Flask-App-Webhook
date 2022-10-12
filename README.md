@@ -23,7 +23,13 @@ Komunicate app id: `https://widget.kommunicate.io/chat?appId=201b88b52948f69ac0c
 
 
 Note:
-Added `pre-commit`
+
+Added `pre-commit` to repo. 
+To setup pre-commit
+  - Install pre-commit: pip install pre-commit
+  - Add pre-commit to requirements.txt (or requirements-dev.txt)
+  - Define .pre-commit-config.yaml with the hooks you want to include.
+  - Execute pre-commit install to install git hooks in your .git/ directory.
 
 used in ec2
 ```
