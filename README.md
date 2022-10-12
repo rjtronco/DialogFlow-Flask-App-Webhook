@@ -13,8 +13,17 @@
   - attach the ngrok url to the webhook url then save
   - Test the agent
 
+### Kommunicate integration
+
 Frontend for chat app: `http://resty-chatbot.com.s3-website-ap-southeast-1.amazonaws.com/`
 
 Webhook flask app url: `https://9f34-122-248-241-116.ap.ngrok.io/webhook` 
 
 Komunicate app id: `https://widget.kommunicate.io/chat?appId=201b88b52948f69ac0cadb2a8a8b7cbdc`
+
+
+Note:
+```
+ngrok http 8000 > /dev/null &
+curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url
+gunicorn3 app:app --daemon
