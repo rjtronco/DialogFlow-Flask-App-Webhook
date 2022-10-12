@@ -2,6 +2,7 @@
 
 Reference: https://www.kommunicate.io/blog/create-chatbot-in-flask-and-python/
 
+
 ## Highlights
 
 🍭 Creating a Chatbot using DialogFlow
@@ -23,11 +24,13 @@ Reference: https://www.kommunicate.io/blog/create-chatbot-in-flask-and-python/
 
 ## How it works
 
-Create an agent using Dialog flow. You can follow the [documentation/reference](https://www.kommunicate.io/blog/create-chatbot-in-flask-and-python/).
+[Refer here on how I implemented this project.](https://github.com/rjtronco/DialogFlow-Flask-App-Webhook/blob/main/Chatbot%20Dev%20and%20Testing%20Documentation.pdf)
 
+Create an agent using Dialog flow. You can follow the [documentation/reference](https://www.kommunicate.io/blog/create-chatbot-in-flask-and-python/).
 Set keywords and/or expression to train your chatbot
 
-Integrating a Flask app webhook for the ChatBot Fulfilment. The endpoint is `/webhook'. 
+Integrating a Flask app webhook for the ChatBot Fulfilment. This is deployed in `Heroku`. Refer [here](https://devcenter.heroku.com/articles/github-integration) for Heroku deployment of a flask app
+The endpoint is `/webhook`. 
 I have created a sample return message for various keywords that might be used. 
 
 ```python
@@ -68,7 +71,9 @@ Komunicate Integration
 You can integrate your DialogFlow chatbot in Kommunicate to make it useable in a WebUI. You can follow this [documentation](https://www.kommunicate.io/blog/integrate-bot-using-dialogflow-in-kommunicate/)
 
 
-Creating and deploying the webUI. This is just a simple html file with the `<iframe` tag from the Kommunicate integration.
+
+Creating and deploying the webUI. This is just a simple html file with the `<iframe>` tag from the Kommunicate integration.
+This site is hosted in `aws-s3`. [This is how to host a webapp in s3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/WebsiteHosting.html).
 ```html
 <!DOCTYPE html>
 <html>
@@ -90,6 +95,7 @@ Creating and deploying the webUI. This is just a simple html file with the `<ifr
 </html>
 
 ```
+
 
 ### Testing
   - Access the webUI and try chatting with the bot. Some keywords/phrase are `demo`,`python demo`,`bye` etc
