@@ -23,6 +23,9 @@ Komunicate app id: `https://widget.kommunicate.io/chat?appId=201b88b52948f69ac0c
 
 
 Note:
+Added `pre-commit`
+
+used in ec2
 ```
 ngrok http 8000 > /dev/null &
 curl -s localhost:4040/api/tunnels | jq -r .tunnels[0].public_url
