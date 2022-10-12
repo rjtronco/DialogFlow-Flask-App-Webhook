@@ -10,7 +10,8 @@
   - Create Flask App for the Fulfillment of the custom intent
   - Install ngrok in your local
   - run your flask app and ngrok
-  - Use the test files to check if your endpoints work correctly
+  - attach the ngrok url to the webhook url then save
+  - Test the agent
 
 Frontend for chat app: `http://resty-chatbot.com.s3-website-ap-southeast-1.amazonaws.com/`
 
